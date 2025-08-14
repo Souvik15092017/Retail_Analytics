@@ -1,0 +1,174 @@
+USE RETAIL_ANALYTICS;
+
+INSERT INTO DIM_CUSTOMER VALUES (1, 'Souvik Jha', 'Male', 'Kolkata', '20-30');
+INSERT INTO DIM_CUSTOMER VALUES (2, 'Priya Das', 'Female', 'Delhi', '20-30');
+INSERT INTO DIM_CUSTOMER VALUES (3, 'Amit Verma', 'Male', 'Mumbai', '31-40');
+INSERT INTO DIM_CUSTOMER VALUES (4, 'Sneha Roy', 'Female', 'Bangalore', '20-30');
+INSERT INTO DIM_CUSTOMER VALUES (5, 'Ravi Kumar', 'Male', 'Chennai', '31-40');
+INSERT INTO DIM_CUSTOMER VALUES (6, 'Anjali Mehta', 'Female', 'Ahmedabad', '20-30');
+INSERT INTO DIM_CUSTOMER VALUES (7, 'Karan Singh', 'Male', 'Pune', '41-50');
+INSERT INTO DIM_CUSTOMER VALUES (8, 'Neha Sharma', 'Female', 'Jaipur', '31-40');
+INSERT INTO DIM_CUSTOMER VALUES (9, 'Manoj Das', 'Male', 'Kolkata', '41-50');
+INSERT INTO DIM_CUSTOMER VALUES (10, 'Isha Kapoor', 'Female', 'Delhi', '20-30');
+INSERT INTO DIM_CUSTOMER VALUES (11, 'Vikram Rathi', 'Male', 'Hyderabad', '31-40');
+INSERT INTO DIM_CUSTOMER VALUES (12, 'Pooja Sinha', 'Female', 'Patna', '20-30');
+INSERT INTO DIM_CUSTOMER VALUES (13, 'Deepak Yadav', 'Male', 'Lucknow', '31-40');
+INSERT INTO DIM_CUSTOMER VALUES (14, 'Ritika Bose', 'Female', 'Kolkata', '20-30');
+INSERT INTO DIM_CUSTOMER VALUES (15, 'Arjun Nair', 'Male', 'Kochi', '20-30');
+INSERT INTO DIM_CUSTOMER VALUES (16, 'Sana Sheikh', 'Female', 'Mumbai', '31-40');
+INSERT INTO DIM_CUSTOMER VALUES (17, 'Raj Malhotra', 'Male', 'Delhi', '41-50');
+INSERT INTO DIM_CUSTOMER VALUES (18, 'Divya Iyer', 'Female', 'Bangalore', '31-40');
+INSERT INTO DIM_CUSTOMER VALUES (19, 'Nikhil Pandey', 'Male', 'Indore', '20-30');
+INSERT INTO DIM_CUSTOMER VALUES (20, 'Tanya Bhatt', 'Female', 'Nagpur', '31-40');
+
+SELECT* FROM DIM_CUSTOMER;
+
+INSERT INTO DIM_PRODUCT VALUES (101, 'iPhone 14', 'Electronics', 'Apple', 69999.00);
+INSERT INTO DIM_PRODUCT VALUES (102, 'Galaxy S22', 'Electronics', 'Samsung', 62999.00);
+INSERT INTO DIM_PRODUCT VALUES (103, 'MacBook Air', 'Electronics', 'Apple', 99999.00);
+INSERT INTO DIM_PRODUCT VALUES (104, 'Nike Air Max', 'Footwear', 'Nike', 8499.00);
+INSERT INTO DIM_PRODUCT VALUES (105, 'Campus Sports Shoes', 'Footwear', 'Campus', 2499.00);
+INSERT INTO DIM_PRODUCT VALUES (106, 'Realme Narzo', 'Electronics', 'Realme', 13999.00);
+INSERT INTO DIM_PRODUCT VALUES (107, 'Puma T-Shirt', 'Clothing', 'Puma', 1299.00);
+INSERT INTO DIM_PRODUCT VALUES (108, 'Levi\'s Jeans', 'Clothing', 'Levi\'s', 3299.00);
+INSERT INTO DIM_PRODUCT VALUES (109, 'HP Pavilion Laptop', 'Electronics', 'HP', 56999.00);
+INSERT INTO DIM_PRODUCT VALUES (110, 'Apple AirPods', 'Electronics', 'Apple', 13999.00);
+INSERT INTO DIM_PRODUCT VALUES (111, 'Samsung Refrigerator', 'Appliances', 'Samsung', 42999.00);
+INSERT INTO DIM_PRODUCT VALUES (112, 'LG Washing Machine', 'Appliances', 'LG', 30999.00);
+INSERT INTO DIM_PRODUCT VALUES (113, 'Sony Headphones', 'Electronics', 'Sony', 6999.00);
+INSERT INTO DIM_PRODUCT VALUES (114, 'H&M Hoodie', 'Clothing', 'H&M', 1999.00);
+INSERT INTO DIM_PRODUCT VALUES (115, 'Zara Casual Shirt', 'Clothing', 'Zara', 1799.00);
+INSERT INTO DIM_PRODUCT VALUES (116, 'TCL Smart TV', 'Electronics', 'TCL', 26999.00);
+INSERT INTO DIM_PRODUCT VALUES (117, 'Apple Watch SE', 'Electronics', 'Apple', 28999.00);
+INSERT INTO DIM_PRODUCT VALUES (118, 'Usha Ceiling Fan', 'Appliances', 'Usha', 2499.00);
+INSERT INTO DIM_PRODUCT VALUES (119, 'OnePlus Nord', 'Electronics', 'OnePlus', 27999.00);
+INSERT INTO DIM_PRODUCT VALUES (120, 'Redmi Note 12', 'Electronics', 'Xiaomi', 18999.00);
+
+
+SELECT* FROM DIM_PRODUCT;
+
+
+
+INSERT INTO DIM_STORE VALUES (201, 'Big Bazaar - Kolkata', 'Kolkata', 'East');
+INSERT INTO DIM_STORE VALUES (202, 'Reliance Digital - Delhi', 'Delhi', 'North');
+INSERT INTO DIM_STORE VALUES (203, 'Croma - Mumbai', 'Mumbai', 'West');
+INSERT INTO DIM_STORE VALUES (204, 'D-Mart - Bangalore', 'Bangalore', 'South');
+INSERT INTO DIM_STORE VALUES (205, 'V-Mart - Patna', 'Patna', 'East');
+INSERT INTO DIM_STORE VALUES (206, 'Reliance Trends - Hyderabad', 'Hyderabad', 'South');
+INSERT INTO DIM_STORE VALUES (207, 'More Retail - Jaipur', 'Jaipur', 'North');
+INSERT INTO DIM_STORE VALUES (208, 'Spencer\'s - Chennai', 'Chennai', 'South');
+INSERT INTO DIM_STORE VALUES (209, 'Future Retail - Lucknow', 'Lucknow', 'North');
+INSERT INTO DIM_STORE VALUES (210, 'Star Bazaar - Pune', 'Pune', 'West');
+
+SELECT* FROM DIM_STORE;
+
+
+
+INSERT INTO DIM_DATE VALUES ('2025-06-01', 2025, 6, 1, 'Sunday');
+INSERT INTO DIM_DATE VALUES ('2025-06-02', 2025, 6, 2, 'Monday');
+INSERT INTO DIM_DATE VALUES ('2025-06-03', 2025, 6, 3, 'Tuesday');
+INSERT INTO DIM_DATE VALUES ('2025-06-04', 2025, 6, 4, 'Wednesday');
+INSERT INTO DIM_DATE VALUES ('2025-06-05', 2025, 6, 5, 'Thursday');
+INSERT INTO DIM_DATE VALUES ('2025-06-06', 2025, 6, 6, 'Friday');
+INSERT INTO DIM_DATE VALUES ('2025-06-07', 2025, 6, 7, 'Saturday');
+INSERT INTO DIM_DATE VALUES ('2025-06-08', 2025, 6, 8, 'Sunday');
+INSERT INTO DIM_DATE VALUES ('2025-06-09', 2025, 6, 9, 'Monday');
+INSERT INTO DIM_DATE VALUES ('2025-06-10', 2025, 6, 10, 'Tuesday');
+INSERT INTO DIM_DATE VALUES ('2025-06-11', 2025, 6, 11, 'Wednesday');
+INSERT INTO DIM_DATE VALUES ('2025-06-12', 2025, 6, 12, 'Thursday');
+INSERT INTO DIM_DATE VALUES ('2025-06-13', 2025, 6, 13, 'Friday');
+INSERT INTO DIM_DATE VALUES ('2025-06-14', 2025, 6, 14, 'Saturday');
+INSERT INTO DIM_DATE VALUES ('2025-06-15', 2025, 6, 15, 'Sunday');
+INSERT INTO DIM_DATE VALUES ('2025-06-16', 2025, 6, 16, 'Monday');
+INSERT INTO DIM_DATE VALUES ('2025-06-17', 2025, 6, 17, 'Tuesday');
+INSERT INTO DIM_DATE VALUES ('2025-06-18', 2025, 6, 18, 'Wednesday');
+INSERT INTO DIM_DATE VALUES ('2025-06-19', 2025, 6, 19, 'Thursday');
+INSERT INTO DIM_DATE VALUES ('2025-06-20', 2025, 6, 20, 'Friday');
+
+SELECT * FROM DIM_DATE;
+
+
+
+
+INSERT INTO DIM_PAYMENT_METHOD VALUES (1, 'Cash');
+INSERT INTO DIM_PAYMENT_METHOD VALUES (2, 'Credit Card');
+INSERT INTO DIM_PAYMENT_METHOD VALUES (3, 'Debit Card');
+INSERT INTO DIM_PAYMENT_METHOD VALUES (4, 'UPI');
+INSERT INTO DIM_PAYMENT_METHOD VALUES (5, 'Mobile Wallet');
+
+SELECT* FROM DIM_PAYMENT_METHOD;
+
+
+
+INSERT INTO FACT_SALES VALUES
+(1, 13, 119, 210, '2025-06-01', 1, 3, 243400.86),
+(2, 14, 105, 208, '2025-06-06', 1, 2, 147821.3),
+(3, 13, 111, 204, '2025-06-15', 3, 2, 45290.32),
+(4, 13, 109, 207, '2025-06-09', 1, 2, 85540.52),
+(5, 1, 118, 201, '2025-06-12', 2, 3, 178011.9),
+(6, 3, 102, 201, '2025-06-08', 2, 1, 3476.06),
+(7, 20, 105, 204, '2025-06-05', 4, 3, 221731.95),
+(8, 4, 119, 204, '2025-06-15', 3, 2, 162267.24),
+(9, 6, 120, 210, '2025-06-04', 2, 2, 3286.76),
+(10, 4, 119, 201, '2025-06-10', 5, 3, 243400.86),
+(11, 13, 113, 204, '2025-06-03', 5, 3, 10881.18),
+(12, 8, 104, 205, '2025-06-20', 1, 3, 69293.58),
+(13, 2, 112, 209, '2025-06-14', 3, 1, 51030.17),
+(14, 17, 111, 201, '2025-06-14', 4, 1, 22645.16),
+(15, 14, 112, 208, '2025-06-05', 4, 1, 51030.17),
+(16, 17, 109, 210, '2025-06-18', 4, 2, 85540.52),
+(17, 14, 119, 205, '2025-06-11', 2, 1, 81133.62),
+(18, 9, 115, 204, '2025-06-15', 5, 3, 196015.68),
+(19, 13, 111, 201, '2025-06-16', 3, 1, 22645.16),
+(20, 16, 107, 206, '2025-06-09', 3, 2, 178651.56),
+(21, 20, 109, 209, '2025-06-01', 5, 1, 42770.26),
+(22, 3, 108, 207, '2025-06-16', 5, 1, 9606.94),
+(23, 16, 116, 208, '2025-06-01', 1, 2, 109898.42),
+(24, 8, 113, 204, '2025-06-10', 5, 2, 7254.12),
+(25, 16, 118, 209, '2025-06-12', 4, 3, 178011.9),
+(26, 18, 111, 206, '2025-06-15', 3, 2, 45290.32),
+(27, 9, 108, 202, '2025-06-07', 3, 1, 9606.94),
+(28, 18, 106, 204, '2025-06-07', 4, 2, 135986.5),
+(29, 19, 117, 210, '2025-06-10', 1, 1, 22823.62),
+(30, 10, 108, 206, '2025-06-06', 3, 1, 9606.94),
+(31, 18, 105, 205, '2025-06-02', 1, 3, 221731.95),
+(32, 10, 105, 208, '2025-06-04', 1, 3, 221731.95),
+(33, 10, 116, 208, '2025-06-15', 3, 1, 54949.21),
+(34, 2, 109, 208, '2025-06-04', 1, 2, 85540.52),
+(35, 16, 103, 210, '2025-06-02', 2, 1, 28227.9),
+(36, 19, 110, 202, '2025-06-08', 1, 3, 11849.76),
+(37, 14, 120, 210, '2025-06-20', 2, 3, 4930.14),
+(38, 13, 115, 208, '2025-06-10', 5, 2, 130677.12),
+(39, 10, 119, 210, '2025-06-02', 5, 3, 243400.86),
+(40, 4, 107, 204, '2025-06-09', 1, 1, 89325.78),
+(41, 8, 106, 209, '2025-06-03', 2, 1, 67993.25),
+(42, 14, 115, 210, '2025-06-16', 3, 1, 65338.56),
+(43, 8, 110, 205, '2025-06-15', 1, 3, 11849.76),
+(44, 8, 109, 210, '2025-06-07', 4, 1, 42770.26),
+(45, 18, 108, 203, '2025-06-09', 2, 1, 9606.94),
+(46, 2, 106, 205, '2025-06-20', 5, 2, 135986.5),
+(47, 15, 104, 208, '2025-06-10', 4, 2, 46195.72),
+(48, 17, 118, 208, '2025-06-15', 1, 3, 178011.9),
+(49, 2, 114, 206, '2025-06-20', 3, 1, 20684.93),
+(50, 3, 108, 210, '2025-06-19', 1, 3, 28820.82),
+(51, 9, 119, 201, '2025-06-06', 4, 3, 243400.86),
+(52, 15, 109, 203, '2025-06-19', 4, 3, 128310.78),
+(53, 16, 103, 208, '2025-06-12', 4, 2, 56455.8),
+(54, 11, 104, 203, '2025-06-11', 4, 3, 69293.58),
+(55, 16, 110, 207, '2025-06-18', 1, 2, 7899.84),
+(56, 3, 111, 205, '2025-06-11', 1, 2, 45290.32),
+(57, 17, 101, 209, '2025-06-15', 4, 1, 64303.25),
+(58, 7, 117, 206, '2025-06-20', 4, 3, 68470.86),
+(59, 15, 102, 204, '2025-06-09', 5, 1, 3476.06),
+(60, 10, 115, 208, '2025-06-04', 1, 3, 196015.68);
+
+UPDATE FACT_SALES fs
+JOIN DIM_PRODUCT dp ON fs.PRODUCT_ID = dp.PRODUCT_ID
+SET fs.TOTAL_AMOUNT = ROUND(dp.PRICE * fs.QUANTITY, 2);
+
+
+SELECT* FROM FACT_SALES;
+
+
+
+
